@@ -7,9 +7,24 @@
     <title>Cubos Academy Document</title>
 </head>
 
-<body>
+<body
+    style="background-image: linear-gradient(to left top, rgb(40, 40, 45), #D818A5); background-repeat: no-repeat; background-size: cover; height: 100vh;">
 
-    <h1>TESTE</h1>
+
+    <div
+        style="width: 400px; height: 200px; background-color: rgba(37, 36, 36, 0.418); border-radius: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 1px 1px 20px black; margin: 100px auto;">
+        <h1>Insira Nomes</h1>
+        <div>
+            <input type="text"
+                style="border-radius: 8px; color: white; border: none; background-color: rgba(37, 36, 36, 0.418); text-align: center; "
+                name="texto" id="idtxt" placeholder="Insira um Nome">
+            <input type="button" style="border-radius: 8px;" value="Salvar" onclick="salvaNome()">
+            <input type="button" style="border-radius: 8px;" value="Mostrar" onclick="mostraNome()">
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
 
 </body>
 
