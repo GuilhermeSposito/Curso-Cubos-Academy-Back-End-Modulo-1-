@@ -12,13 +12,18 @@ class Bg {
 
     constructor() {
         if (localStorage.getItem('id') == null) {
-            localStorage.setItem(0, 0)
+            localStorage.setItem('id', 0)
         }
     }
 
-    insereNoStorage(p) {
+    getStorage() {
+        let id = localStorage.getItem('id')
+        return id += 1
+    }
 
-        localStorage.setItem(2, JSON.stringify(p))
+    insereNoStorage(p) {
+        let id = this.getStorage()
+        localStorage.setItem(id, JSON.stringify(p))
 
     }
 
